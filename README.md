@@ -9,6 +9,11 @@ The helper will help you with the following following
 
 ```go
 
+// dummy solver
+def solver(inp string) string {
+   return "some solution"
+}
+
 aoc := AdventOfCode{
     session: "53616c74asdadasdaasdadssda", // Session cookie taken from devtools in Chrome
     year:    2022,   // What year to solve
@@ -22,4 +27,4 @@ aoc.Solve() // This will trigger the actions
 
 ```
 
-See main.go for how it's used.
+See main.go for how it's used
