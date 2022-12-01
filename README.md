@@ -21,3 +21,5 @@ aoc := AdventOfCode{
 aoc.Solve() // This will trigger the actions
 
 ```
+
+See main.go for how it's used.
