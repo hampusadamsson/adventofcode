@@ -40,6 +40,14 @@ func (aoc *AdventOfCode) Solve() bool {
 	}
 }
 
+// SolveFromFile - read test.txt and solve it
+func (aoc AdventOfCode) SolveFromFile() {
+	b, _ := ioutil.ReadFile("./test.txt")
+	problem := string(b)
+	sol := aoc.solver(problem)
+	fmt.Println(fmt.Sprintf("Dummy solution: %s", sol))
+}
+
 // getProblem - retrieve the problem for the given advent-of-code
 func (aoc *AdventOfCode) getProblem() string {
 	fmt.Println(fmt.Sprintf("Retrieving problem for day: %d", aoc.day))
