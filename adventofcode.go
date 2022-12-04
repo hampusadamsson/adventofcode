@@ -40,12 +40,22 @@ func (aoc *AdventOfCode) Solve() bool {
 	}
 }
 
+// SolveTestAndThenReal - read test.txt and solve it, if it works, aolve real
+func (aoc AdventOfCode) SolveTestAndThenReal(expected string) {
+	testSolve := aoc.SolveFromFile()
+	if testSolve == expected {
+		fmt.Println("Test solution matches expected")
+		aoc.Solve()
+	}
+}
+
 // SolveFromFile - read test.txt and solve it
-func (aoc AdventOfCode) SolveFromFile() {
+func (aoc AdventOfCode) SolveFromFile() string {
 	b, _ := ioutil.ReadFile("./test.txt")
 	problem := string(b)
 	sol := aoc.solver(problem)
 	fmt.Println(fmt.Sprintf("Dummy solution: %s", sol))
+	return sol
 }
 
 // getProblem - retrieve the problem for the given advent-of-code
