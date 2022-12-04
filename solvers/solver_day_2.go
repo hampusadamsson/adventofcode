@@ -1,4 +1,4 @@
-package aoc
+package solvers
 
 import (
 	"fmt"

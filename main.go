@@ -1,7 +1,7 @@
 package main
 
 import (
-	"adventofcode/aoc"
+	"adventofcode/solvers"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 		year:    2022,
 		day:     4,
 		level:   2,
-		solver:  aoc.Solve4_2,
+		solver:  solvers.Solve4_2,
 		submit:  true,
 	}
 
