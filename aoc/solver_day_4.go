@@ -1,4 +1,4 @@
-package main
+package aoc
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func solve4_1(s string) string {
+func Solve4_1(s string) string {
 	a := strings.Split(s, "\n")
 	a = a[:len(a)-1]
 	sum := 0
@@ -67,7 +67,7 @@ func (p *Pair) contain(p2 Pair) bool {
 	return false
 }
 
-func solve4_2(s string) string {
+func Solve4_2(s string) string {
 	// a := strings.Split(s, "\n")
 	a := strings.FieldsFunc(s, func(r rune) bool {
 		return r == '\n'

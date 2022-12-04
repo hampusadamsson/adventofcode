@@ -1,4 +1,4 @@
-package main
+package aoc
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func solve1_1(s string) string {
+func Solve1_1(s string) string {
 	a := strings.Split(s, "\n\n")
 	arr := make([]int, 0)
 
@@ -29,7 +29,7 @@ func solve1_1(s string) string {
 	return fmt.Sprintln(max)
 }
 
-func solve1_2(s string) string {
+func Solve1_2(s string) string {
 	a := strings.Split(s, "\n\n")
 	arr := make([]int, 0)
 

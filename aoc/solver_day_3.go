@@ -1,11 +1,11 @@
-package main
+package aoc
 
 import (
 	"fmt"
 	"strings"
 )
 
-func solve3_1(s string) string {
+func Solve3_1(s string) string {
 	a := strings.Split(s, "\n")
 	sum := 0
 
@@ -34,7 +34,7 @@ func solve3_1(s string) string {
 	return fmt.Sprint(sum)
 }
 
-func solve3_2(s string) string {
+func Solve3_2(s string) string {
 	b := strings.Split(s, "\n")
 	sum := 0
 

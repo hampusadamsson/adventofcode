@@ -1,11 +1,11 @@
-package main
+package aoc
 
 import (
 	"fmt"
 	"strings"
 )
 
-func solve2_1(s string) string {
+func Solve2_1(s string) string {
 	a := strings.Split(s, "\n")
 	a = a[:len(a)-1] // trainling new line
 	arr := make([]int, 0)
@@ -53,7 +53,7 @@ func solve2_1(s string) string {
 	return fmt.Sprintln(max)
 }
 
-func solve2_2(s string) string {
+func Solve2_2(s string) string {
 	a := strings.Split(s, "\n")
 	a = a[:len(a)-1] // trainling new line
 	arr := make([]int, 0)

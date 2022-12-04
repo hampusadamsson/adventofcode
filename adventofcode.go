@@ -40,12 +40,14 @@ func (aoc *AdventOfCode) Solve() bool {
 	}
 }
 
-// SolveTestAndThenReal - read test.txt and solve it, if it works, aolve real
+// SolveTestAndThenReal - read test.txt and solve it, if it works, solve the real problem and submit
 func (aoc AdventOfCode) SolveTestAndThenReal(expected string) {
 	testSolve := aoc.SolveFromFile()
 	if testSolve == expected {
 		fmt.Println("Test solution matches expected")
 		aoc.Solve()
+	} else {
+		fmt.Println("Problem does not match expected")
 	}
 }
 
