@@ -47,7 +47,7 @@ func (aoc AdventOfCode) SolveTestAndThenReal(expected string) {
 		fmt.Println("Test solution matches expected")
 		aoc.Solve()
 	} else {
-		fmt.Println("Problem does not match expected")
+		fmt.Println("Problem does not match expected", expected, " but you have", testSolve)
 	}
 }
 
