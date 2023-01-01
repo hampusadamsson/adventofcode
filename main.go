@@ -1,19 +1,16 @@
 package main
 
-import (
-	"adventofcode/solvers"
-)
+import "adventofcode/solvers"
 
 func main() {
 	aoc := AdventOfCode{
 		session: "",
 		year:    2022,
-		day:     4,
+		day:     14,
 		level:   2,
-		solver:  solvers.Solve4_2,
+		solver:  solvers.Solve14_2,
 		submit:  true,
 	}
 
-	aoc.SolveTestAndThenReal("4")
-	// aoc.Solve()
+	aoc.SolveTestAndThenReal("93")
 }
